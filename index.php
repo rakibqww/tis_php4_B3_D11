@@ -29,34 +29,33 @@
                 <div class="card">
                     <div class="card-header">Please Fill up</div>
                     <div class="card-body">
-                        <form>
+                                <form action="action.php" method="POST">
                             <div class="form-group row">
                                 <label class="col-md-3 col-form-label">First Name</label>
                                 <div class="col-md-9">
-                                    <input type="text" class="form-control"/>
+                                    <input type="text" name="first_name" class="form-control"/>
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label class="col-md-3 col-form-label">Last Name</label>
                                 <div class="col-md-9">
-                                    <input type="text" class="form-control"/>
+                                    <input type="text" name="last_name"  class="form-control"/>
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label class="col-md-3 col-form-label">Full Name</label>
                                 <div class="col-md-9">
-                                    <input type="text" class="form-control"/>
+                                    <input type="text" value="<?php echo isset($result) ? $result : '';?>" class="form-control"/>
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label class="col-md-3 col-form-label"></label>
                                 <div class="col-md-9">
-                                    <input type="button" class="btn btn-outline-success" value="Submit"/>
+                                    <input type="submit" name="btn" class="btn btn-outline-success" value="Submit"/>
                                 </div>
                             </div>
                         </form>
                     </div>
-
                 </div>
             </div>
         </div>
